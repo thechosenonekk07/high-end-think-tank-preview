@@ -1,0 +1,307 @@
+.platform-metric-detail-modal .arco-modal-content {
+  max-height: calc(100dvh - 200px);
+  overflow-y: auto;
+  padding: 24px;
+}
+.platform-metric-detail-modal .arco-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+}
+.metric-detail-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+.metric-detail-actions .arco-btn {
+  height: 32px;
+  padding: 0 16px;
+}
+.metric-detail-intro {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 22px;
+}
+.metric-detail-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.metric-detail-kpis > div {
+  min-width: 0;
+  padding: 12px;
+  border-radius: 4px;
+  background: #f7f8fa;
+}
+.metric-detail-kpis dt {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 20px;
+}
+.metric-detail-kpis dd {
+  margin: 4px 0 0;
+  color: var(--text-primary);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.metric-detail-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.metric-detail-section h3 {
+  margin: 0 0 12px;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.metric-detail-chart-scroll {
+  overflow-x: auto;
+  padding: 8px 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+}
+.metric-detail-chart-scroll:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+.metric-detail-chart {
+  display: block;
+  width: 100%;
+  min-width: 590px;
+  height: 180px;
+}
+.metric-detail-chart text {
+  font-size: 12px;
+}
+.metric-chart-stage {
+  position: relative;
+  width: 590px;
+  min-width: 590px;
+  height: 180px;
+  margin: 0 auto;
+}
+.metric-chart-stage svg {
+  pointer-events: none;
+}
+.metric-chart-point {
+  position: absolute;
+  top: 18px;
+  width: 52px;
+  height: 155px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+.metric-chart-point:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 1px;
+}
+.metric-chart-tooltip {
+  position: absolute;
+  z-index: 2;
+  top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 200px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #1d2129;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  pointer-events: none;
+}
+.metric-chart-tooltip strong {
+  color: #fff;
+  font-weight: 500;
+}
+.metric-chart-help {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 20px;
+}
+.metric-point-detail {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 4px;
+  background: #f7f8fa;
+}
+.metric-point-detail-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 22px;
+}
+.metric-point-detail-heading strong {
+  font-weight: 500;
+}
+.metric-point-detail-heading .arco-btn {
+  height: 24px;
+  padding: 0;
+  font-size: 12px;
+}
+.metric-point-detail dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 8px 0 0;
+}
+.metric-point-detail dt {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 20px;
+}
+.metric-point-detail dd {
+  margin: 4px 0 0;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 22px;
+}
+.metric-detail-composition {
+  display: grid;
+  gap: 12px;
+}
+.metric-composition-row {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) 144px;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 20px;
+}
+.metric-composition-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f2f3f5;
+}
+.metric-composition-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--brand);
+}
+.metric-composition-value {
+  color: var(--text-primary);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.metric-detail-note {
+  margin: 16px 0 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 20px;
+}
+.metric-detail-line-stage {
+  position: relative;
+  min-width: 590px;
+  height: 240px;
+  margin: 0 auto;
+}
+.metric-detail-line-stage .metric-detail-chart {
+  height: 240px;
+  min-width: 590px;
+}
+.metric-line-point {
+  cursor: pointer;
+}
+.metric-detail-line-scroll.is-embedded {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+.metric-line-point:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+.metric-line-tooltip {
+  top: 8px;
+  width: 204px;
+}
+.metric-line-tooltip > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.metric-line-tooltip i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex: none;
+}
+.metric-line-tooltip b {
+  margin-left: auto;
+  font-weight: 400;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .case-browser-active .platform-metric-detail-modal > [data-focus-lock-disabled] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+  }
+  .case-browser-active .platform-metric-detail-modal .arco-modal-header,
+  .case-browser-active .platform-metric-detail-modal .arco-modal-footer {
+    flex: none;
+  }
+  .case-browser-active .platform-metric-detail-modal .arco-modal-content {
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+    overflow-y: auto;
+  }
+  .case-browser-active .platform-metric-detail-modal .arco-modal-footer {
+    padding: 12px 16px max(12px, env(safe-area-inset-bottom));
+  }
+  .metric-detail-actions .arco-btn {
+    min-height: 44px;
+    height: 44px;
+  }
+  .metric-detail-kpis {
+    gap: 8px;
+  }
+  .metric-detail-kpis > div {
+    padding: 8px;
+  }
+  .metric-detail-kpis dd {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .metric-composition-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px 12px;
+  }
+  .metric-composition-track {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .metric-composition-value {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .metric-point-detail dl {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .metric-point-detail-heading .arco-btn {
+    min-height: 44px;
+    height: 44px;
+    padding: 0 8px;
+  }
+}
